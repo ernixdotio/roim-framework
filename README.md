@@ -14,7 +14,7 @@ Construction robots are arriving on site faster than the information they need. 
 
 **Robotics Information Modelling (RoIM)** is the structured creation, management and exchange of building information to the geometric accuracy, semantic depth and currency that an autonomous or semi-autonomous machine needs to localise, navigate, set out, build, inspect or verify work in the built environment.
 
-📄 **White paper:** [RoIM v1.0 (PDF)](docs/white-paper/RoIM_White_Paper_v1.0.pdf) · [Zenodo record, DOI 10.5281/zenodo.24099902](https://doi.org/10.5281/zenodo.24099902)
+📄 **White paper:** [RoIM v1.1 (PDF)](docs/white-paper/RoIM_White_Paper_v1.1.pdf) · [Zenodo record, DOI 10.5281/zenodo.24099902](https://doi.org/10.5281/zenodo.24099902)
 
 ---
 
