@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ids:ids xmlns:ids="http://standards.buildingsmart.org/IDS" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://standards.buildingsmart.org/IDS http://standards.buildingsmart.org/IDS/1.0/ids.xsd">
+  <ids:info>
+    <ids:title>RoIM Levels of Information R1-R4 (Pset_RobotReadiness v0.1)</ids:title>
+    <ids:copyright>Ernest Mandisodza, CC BY 4.0</ids:copyright>
+    <ids:version>0.1</ids:version>
+    <ids:description>Checks that elements declaring a RoIM level carry the properties that level requires. Robotics Information Modelling (RoIM), doi:10.5281/zenodo.24099902</ids:description>
+    <ids:date>2026-11-10</ids:date>
+    <ids:purpose>Robot-ready model delivery check</ids:purpose>
+  </ids:info>
+  <ids:specifications>
+    <ids:specification name="RoIM R1 - Navigable" ifcVersion="IFC2X3 IFC4 IFC4X3_ADD2" description="Elements declared at R1 or above must carry every Pset_RobotReadiness property required up to R1.">
+      <ids:applicability minOccurs="0" maxOccurs="unbounded">
+        <ids:property dataType="IFCLABEL">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>RoIM_Level</ids:simpleValue></ids:baseName>
+          <ids:value><xs:restriction base="xs:string"><xs:enumeration value="R1"/><xs:enumeration value="R2"/><xs:enumeration value="R3"/><xs:enumeration value="R4"/></xs:restriction></ids:value>
+        </ids:property>
+      </ids:applicability>
+      <ids:requirements>
+        <ids:property dataType="IFCLABEL" cardinality="required">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>RoIM_TaskScope</ids:simpleValue></ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCBOOLEAN" cardinality="required">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>Traversable</ids:simpleValue></ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCBOOLEAN" cardinality="required">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>KeepOutZone</ids:simpleValue></ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCLABEL" cardinality="required">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>ControlPointRef</ids:simpleValue></ids:baseName>
+        </ids:property>
+      </ids:requirements>
+    </ids:specification>
+    <ids:specification name="RoIM R2 - Verifiable" ifcVersion="IFC2X3 IFC4 IFC4X3_ADD2" description="Elements declared at R2 or above must carry every Pset_RobotReadiness property required up to R2.">
+      <ids:applicability minOccurs="0" maxOccurs="unbounded">
+        <ids:property dataType="IFCLABEL">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>RoIM_Level</ids:simpleValue></ids:baseName>
+          <ids:value><xs:restriction base="xs:string"><xs:enumeration value="R2"/><xs:enumeration value="R3"/><xs:enumeration value="R4"/></xs:restriction></ids:value>
+        </ids:property>
+      </ids:applicability>
+      <ids:requirements>
+        <ids:property dataType="IFCLABEL" cardinality="required">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>RoIM_TaskScope</ids:simpleValue></ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCBOOLEAN" cardinality="required">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>Traversable</ids:simpleValue></ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCBOOLEAN" cardinality="required">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>KeepOutZone</ids:simpleValue></ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCLABEL" cardinality="required">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>ControlPointRef</ids:simpleValue></ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCLENGTHMEASURE" cardinality="required">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>PositionTolerance</ids:simpleValue></ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCLABEL" cardinality="required">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>AsDesignedState</ids:simpleValue></ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCBOOLEAN" cardinality="required">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>RegistrationTarget</ids:simpleValue></ids:baseName>
+        </ids:property>
+      </ids:requirements>
+    </ids:specification>
+    <ids:specification name="RoIM R3 - Actionable" ifcVersion="IFC2X3 IFC4 IFC4X3_ADD2" description="Elements declared at R3 or above must carry every Pset_RobotReadiness property required up to R3.">
+      <ids:applicability minOccurs="0" maxOccurs="unbounded">
+        <ids:property dataType="IFCLABEL">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>RoIM_Level</ids:simpleValue></ids:baseName>
+          <ids:value><xs:restriction base="xs:string"><xs:enumeration value="R3"/><xs:enumeration value="R4"/></xs:restriction></ids:value>
+        </ids:property>
+      </ids:applicability>
+      <ids:requirements>
+        <ids:property dataType="IFCLABEL" cardinality="required">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>RoIM_TaskScope</ids:simpleValue></ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCBOOLEAN" cardinality="required">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>Traversable</ids:simpleValue></ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCBOOLEAN" cardinality="required">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>KeepOutZone</ids:simpleValue></ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCLABEL" cardinality="required">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>ControlPointRef</ids:simpleValue></ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCLENGTHMEASURE" cardinality="required">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>PositionTolerance</ids:simpleValue></ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCLABEL" cardinality="required">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>AsDesignedState</ids:simpleValue></ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCBOOLEAN" cardinality="required">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>RegistrationTarget</ids:simpleValue></ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCLABEL" cardinality="required">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>SettingOutPoints</ids:simpleValue></ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCLABEL" cardinality="required">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>SurfaceType</ids:simpleValue></ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCLABEL" cardinality="required">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>SubstrateMaterial</ids:simpleValue></ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCLABEL" cardinality="required">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>FixingMethod</ids:simpleValue></ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCLABEL" cardinality="required">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>ApproachSide</ids:simpleValue></ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCLABEL" cardinality="required">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>ScheduleTaskRef</ids:simpleValue></ids:baseName>
+        </ids:property>
+      </ids:requirements>
+    </ids:specification>
+    <ids:specification name="RoIM R4 - Closed-loop" ifcVersion="IFC2X3 IFC4 IFC4X3_ADD2" description="Elements declared at R4 or above must carry every Pset_RobotReadiness property required up to R4.">
+      <ids:applicability minOccurs="0" maxOccurs="unbounded">
+        <ids:property dataType="IFCLABEL">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>RoIM_Level</ids:simpleValue></ids:baseName>
+          <ids:value><xs:restriction base="xs:string"><xs:enumeration value="R4"/></xs:restriction></ids:value>
+        </ids:property>
+      </ids:applicability>
+      <ids:requirements>
+        <ids:property dataType="IFCLABEL" cardinality="required">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>RoIM_TaskScope</ids:simpleValue></ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCBOOLEAN" cardinality="required">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>Traversable</ids:simpleValue></ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCBOOLEAN" cardinality="required">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>KeepOutZone</ids:simpleValue></ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCLABEL" cardinality="required">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>ControlPointRef</ids:simpleValue></ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCLENGTHMEASURE" cardinality="required">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>PositionTolerance</ids:simpleValue></ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCLABEL" cardinality="required">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>AsDesignedState</ids:simpleValue></ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCBOOLEAN" cardinality="required">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>RegistrationTarget</ids:simpleValue></ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCLABEL" cardinality="required">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>SettingOutPoints</ids:simpleValue></ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCLABEL" cardinality="required">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>SurfaceType</ids:simpleValue></ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCLABEL" cardinality="required">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>SubstrateMaterial</ids:simpleValue></ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCLABEL" cardinality="required">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>FixingMethod</ids:simpleValue></ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCLABEL" cardinality="required">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>ApproachSide</ids:simpleValue></ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCLABEL" cardinality="required">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>ScheduleTaskRef</ids:simpleValue></ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCLABEL" cardinality="required">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>AsBuiltState</ids:simpleValue></ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCLENGTHMEASURE" cardinality="required">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>MeasuredDeviation</ids:simpleValue></ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCDATE" cardinality="required">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>LastVerifiedDate</ids:simpleValue></ids:baseName>
+        </ids:property>
+        <ids:property dataType="IFCLABEL" cardinality="required">
+          <ids:propertySet><ids:simpleValue>Pset_RobotReadiness</ids:simpleValue></ids:propertySet>
+          <ids:baseName><ids:simpleValue>VerificationSource</ids:simpleValue></ids:baseName>
+        </ids:property>
+      </ids:requirements>
+    </ids:specification>
+  </ids:specifications>
+</ids:ids>

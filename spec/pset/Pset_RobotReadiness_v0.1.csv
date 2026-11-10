@@ -1,0 +1,19 @@
+Property,Type,IFC data type,From level,Allowed values,Description
+RoIM_Level,Enumeration,IFCLABEL,R0,R0; R1; R2; R3; R4,R0 | R1 | R2 | R3 | R4. RoIM Level of Information met by this element for its task scope.
+RoIM_TaskScope,Label list,IFCLABEL,R1,,"Robotic tasks this element is ready for, e.g. Navigate, Scan, SetOut, Drill, Finish, Inspect (semicolon-separated)."
+Traversable,Boolean,IFCBOOLEAN,R1,,True if a ground robot may cross or occupy the element.
+KeepOutZone,Boolean,IFCBOOLEAN,R1,,True if no robot may enter the element or its space.
+ControlPointRef,Label,IFCLABEL,R1,,ID of the survey control point the element is set out from.
+PositionTolerance,Length,IFCLENGTHMEASURE,R2,,"Design placement tolerance (+/-), in project length units (mm recommended)."
+AsDesignedState,Enumeration,IFCLABEL,R2,Design; Approved for construction; Superseded,Design | Approved for construction | Superseded.
+RegistrationTarget,Boolean,IFCBOOLEAN,R2,,True if the element is usable as a scan-to-model registration feature.
+SettingOutPoints,Label,IFCLABEL,R3,,Reference to a setting-out point set (CSV file name or IfcGrid/IfcAnnotation ID).
+SurfaceType,Label,IFCLABEL,R3,,"Finished surface the robot touches, e.g. Concrete fair-faced, Gypsum board, Glazing."
+SubstrateMaterial,Label,IFCLABEL,R3,,"Material behind the surface, for drilling and fixing."
+FixingMethod,Label,IFCLABEL,R3,,"e.g. Anchor M10, Screw, Adhesive."
+ApproachSide,Enumeration,IFCLABEL,R3,Front; Back; Top; Underside; Any,Front | Back | Top | Underside | Any.
+ScheduleTaskRef,Label,IFCLABEL,R3,,4D programme task ID the element belongs to.
+AsBuiltState,Enumeration,IFCLABEL,R4,Not started; In progress; Installed; Verified; Non-conforming,Not started | In progress | Installed | Verified | Non-conforming.
+MeasuredDeviation,Length,IFCLENGTHMEASURE,R4,,Worst measured deviation from design at last verification (mm recommended).
+LastVerifiedDate,Date,IFCDATE,R4,,"ISO 8601 date of last verification, e.g. 2026-11-10."
+VerificationSource,Label,IFCLABEL,R4,,Robot or scan ID plus a link to the evidence.

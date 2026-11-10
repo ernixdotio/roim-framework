@@ -1,0 +1,19 @@
+IFC property (Pset_RobotReadiness),USD attribute (RoIMRobotReadinessAPI),USD type,From level
+RoIM_Level,roim:level,token,R0
+RoIM_TaskScope,roim:taskScope,token[],R1
+Traversable,roim:traversable,bool,R1
+KeepOutZone,roim:keepOutZone,bool,R1
+ControlPointRef,roim:controlPointRef,string,R1
+PositionTolerance,roim:positionTolerance,double,R2
+AsDesignedState,roim:asDesignedState,token,R2
+RegistrationTarget,roim:registrationTarget,bool,R2
+SettingOutPoints,roim:settingOutPoints,string,R3
+SurfaceType,roim:surfaceType,string,R3
+SubstrateMaterial,roim:substrateMaterial,string,R3
+FixingMethod,roim:fixingMethod,string,R3
+ApproachSide,roim:approachSide,token,R3
+ScheduleTaskRef,roim:scheduleTaskRef,string,R3
+AsBuiltState,roim:asBuiltState,token,R4
+MeasuredDeviation,roim:measuredDeviation,double,R4
+LastVerifiedDate,roim:lastVerifiedDate,string,R4
+VerificationSource,roim:verificationSource,string,R4

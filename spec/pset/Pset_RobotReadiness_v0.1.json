@@ -1,0 +1,168 @@
+{
+  "name": "Pset_RobotReadiness",
+  "version": "0.1",
+  "status": "draft for public comment",
+  "framework": "Robotics Information Modelling (RoIM)",
+  "doi": "10.5281/zenodo.24099902",
+  "levels": {
+    "R0": "Visual",
+    "R1": "Navigable",
+    "R2": "Verifiable",
+    "R3": "Actionable",
+    "R4": "Closed-loop"
+  },
+  "properties": [
+    {
+      "name": "RoIM_Level",
+      "type": "Enumeration",
+      "ifcDataType": "IFCLABEL",
+      "fromLevel": "R0",
+      "description": "R0 | R1 | R2 | R3 | R4. RoIM Level of Information met by this element for its task scope.",
+      "allowedValues": [
+        "R0",
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ]
+    },
+    {
+      "name": "RoIM_TaskScope",
+      "type": "Label list",
+      "ifcDataType": "IFCLABEL",
+      "fromLevel": "R1",
+      "description": "Robotic tasks this element is ready for, e.g. Navigate, Scan, SetOut, Drill, Finish, Inspect (semicolon-separated)."
+    },
+    {
+      "name": "Traversable",
+      "type": "Boolean",
+      "ifcDataType": "IFCBOOLEAN",
+      "fromLevel": "R1",
+      "description": "True if a ground robot may cross or occupy the element."
+    },
+    {
+      "name": "KeepOutZone",
+      "type": "Boolean",
+      "ifcDataType": "IFCBOOLEAN",
+      "fromLevel": "R1",
+      "description": "True if no robot may enter the element or its space."
+    },
+    {
+      "name": "ControlPointRef",
+      "type": "Label",
+      "ifcDataType": "IFCLABEL",
+      "fromLevel": "R1",
+      "description": "ID of the survey control point the element is set out from."
+    },
+    {
+      "name": "PositionTolerance",
+      "type": "Length",
+      "ifcDataType": "IFCLENGTHMEASURE",
+      "fromLevel": "R2",
+      "description": "Design placement tolerance (+/-), in project length units (mm recommended)."
+    },
+    {
+      "name": "AsDesignedState",
+      "type": "Enumeration",
+      "ifcDataType": "IFCLABEL",
+      "fromLevel": "R2",
+      "description": "Design | Approved for construction | Superseded.",
+      "allowedValues": [
+        "Design",
+        "Approved for construction",
+        "Superseded"
+      ]
+    },
+    {
+      "name": "RegistrationTarget",
+      "type": "Boolean",
+      "ifcDataType": "IFCBOOLEAN",
+      "fromLevel": "R2",
+      "description": "True if the element is usable as a scan-to-model registration feature."
+    },
+    {
+      "name": "SettingOutPoints",
+      "type": "Label",
+      "ifcDataType": "IFCLABEL",
+      "fromLevel": "R3",
+      "description": "Reference to a setting-out point set (CSV file name or IfcGrid/IfcAnnotation ID)."
+    },
+    {
+      "name": "SurfaceType",
+      "type": "Label",
+      "ifcDataType": "IFCLABEL",
+      "fromLevel": "R3",
+      "description": "Finished surface the robot touches, e.g. Concrete fair-faced, Gypsum board, Glazing."
+    },
+    {
+      "name": "SubstrateMaterial",
+      "type": "Label",
+      "ifcDataType": "IFCLABEL",
+      "fromLevel": "R3",
+      "description": "Material behind the surface, for drilling and fixing."
+    },
+    {
+      "name": "FixingMethod",
+      "type": "Label",
+      "ifcDataType": "IFCLABEL",
+      "fromLevel": "R3",
+      "description": "e.g. Anchor M10, Screw, Adhesive."
+    },
+    {
+      "name": "ApproachSide",
+      "type": "Enumeration",
+      "ifcDataType": "IFCLABEL",
+      "fromLevel": "R3",
+      "description": "Front | Back | Top | Underside | Any.",
+      "allowedValues": [
+        "Front",
+        "Back",
+        "Top",
+        "Underside",
+        "Any"
+      ]
+    },
+    {
+      "name": "ScheduleTaskRef",
+      "type": "Label",
+      "ifcDataType": "IFCLABEL",
+      "fromLevel": "R3",
+      "description": "4D programme task ID the element belongs to."
+    },
+    {
+      "name": "AsBuiltState",
+      "type": "Enumeration",
+      "ifcDataType": "IFCLABEL",
+      "fromLevel": "R4",
+      "description": "Not started | In progress | Installed | Verified | Non-conforming.",
+      "allowedValues": [
+        "Not started",
+        "In progress",
+        "Installed",
+        "Verified",
+        "Non-conforming"
+      ]
+    },
+    {
+      "name": "MeasuredDeviation",
+      "type": "Length",
+      "ifcDataType": "IFCLENGTHMEASURE",
+      "fromLevel": "R4",
+      "description": "Worst measured deviation from design at last verification (mm recommended)."
+    },
+    {
+      "name": "LastVerifiedDate",
+      "type": "Date",
+      "ifcDataType": "IFCDATE",
+      "fromLevel": "R4",
+      "description": "ISO 8601 date of last verification, e.g. 2026-11-10."
+    },
+    {
+      "name": "VerificationSource",
+      "type": "Label",
+      "ifcDataType": "IFCLABEL",
+      "fromLevel": "R4",
+      "description": "Robot or scan ID plus a link to the evidence."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+name: Tooling bug
+description: Something wrong with the checker, IDS file or Revit files.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+    validations: { required: true }
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce and environment
+      description: File used, tool and version (Revit 2025, IfcOpenShell 0.8, etc.)

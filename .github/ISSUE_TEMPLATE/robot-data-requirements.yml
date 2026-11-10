@@ -1,0 +1,27 @@
+name: Robot data requirements
+description: Robotics companies and integrators - tell us what your platform reads from building models.
+title: "[Robot data] "
+labels: ["robotics", "requirements"]
+body:
+  - type: input
+    id: platform
+    attributes:
+      label: Robot type or platform
+      placeholder: e.g. Mobile layout robot, legged scanner, drilling robot
+    validations: { required: true }
+  - type: textarea
+    id: consumes
+    attributes:
+      label: Information the robot consumes
+      description: Formats (IFC, DXF, CSV, point lists), coordinate systems, accuracy, semantics.
+    validations: { required: true }
+  - type: textarea
+    id: gaps
+    attributes:
+      label: Gaps in typical BIM models
+      description: What do you usually have to rebuild or clean by hand?
+  - type: textarea
+    id: mapping
+    attributes:
+      label: Mapping to RoIM properties
+      description: Which Pset_RobotReadiness properties cover your needs, and what's missing?

@@ -1,0 +1,25 @@
+# This is a Revit shared parameter file.
+# Do not edit manually.
+*META	VERSION	MINVERSION
+META	2	1
+*GROUP	ID	NAME
+GROUP	1	RoIM
+*PARAM	GUID	NAME	DATATYPE	DATACATEGORY	GROUP	VISIBLE	DESCRIPTION	USERMODIFIABLE	HIDEWHENNOEDITABLE
+PARAM	a4061326-f4e3-5bd7-8a36-a968e37cad87	RoIM_RoIM_Level	TEXT		1	1	R0 | R1 | R2 | R3 | R4. RoIM Level of Information met by this element for its task scope.	1	0
+PARAM	cf352ec0-8da7-515a-9579-d821f8152064	RoIM_RoIM_TaskScope	TEXT		1	1	Robotic tasks this element is ready for, e.g. Navigate, Scan, SetOut, Drill, Finish, Inspect (semicolon-separated).	1	0
+PARAM	fd053f0a-1061-5ca4-ba91-bf8530872af4	RoIM_Traversable	YESNO		1	1	True if a ground robot may cross or occupy the element.	1	0
+PARAM	856a60b2-d4d9-53e4-a9bf-eac2c7b9d1a3	RoIM_KeepOutZone	YESNO		1	1	True if no robot may enter the element or its space.	1	0
+PARAM	ba5b3df8-a78e-5e1c-a174-0b47b0decc06	RoIM_ControlPointRef	TEXT		1	1	ID of the survey control point the element is set out from.	1	0
+PARAM	041797b7-447b-54f5-abb4-daa9a05fb7f3	RoIM_PositionTolerance	LENGTH		1	1	Design placement tolerance (+/-), in project length units (mm recommended).	1	0
+PARAM	81c84fc7-76a1-5776-83ce-92277ca53ff5	RoIM_AsDesignedState	TEXT		1	1	Design | Approved for construction | Superseded.	1	0
+PARAM	80573be5-4645-58bc-98d4-6d3e5a9e634b	RoIM_RegistrationTarget	YESNO		1	1	True if the element is usable as a scan-to-model registration feature.	1	0
+PARAM	54f2e632-c41a-5945-b042-9d747e632e72	RoIM_SettingOutPoints	TEXT		1	1	Reference to a setting-out point set (CSV file name or IfcGrid/IfcAnnotation ID).	1	0
+PARAM	9a4fef42-4475-58ea-9921-ba8c6ba379e1	RoIM_SurfaceType	TEXT		1	1	Finished surface the robot touches, e.g. Concrete fair-faced, Gypsum board, Glazing.	1	0
+PARAM	b1b68580-657a-5079-9d9b-b21b20966fdd	RoIM_SubstrateMaterial	TEXT		1	1	Material behind the surface, for drilling and fixing.	1	0
+PARAM	18072808-c81a-55ab-8ef7-1f2becf1f1b7	RoIM_FixingMethod	TEXT		1	1	e.g. Anchor M10, Screw, Adhesive.	1	0
+PARAM	c6b2f0eb-2ea4-597f-bdb4-866bb87240e3	RoIM_ApproachSide	TEXT		1	1	Front | Back | Top | Underside | Any.	1	0
+PARAM	42cb9f27-b975-563b-b7c4-23c73de1743c	RoIM_ScheduleTaskRef	TEXT		1	1	4D programme task ID the element belongs to.	1	0
+PARAM	c46aa9a7-c1a2-598f-b556-8a6dcd941b49	RoIM_AsBuiltState	TEXT		1	1	Not started | In progress | Installed | Verified | Non-conforming.	1	0
+PARAM	66042dd7-8fc8-5877-99b5-1f43448bde9f	RoIM_MeasuredDeviation	LENGTH		1	1	Worst measured deviation from design at last verification (mm recommended).	1	0
+PARAM	8c7dc8fb-9314-5709-99e2-b721c9766d9e	RoIM_LastVerifiedDate	TEXT		1	1	ISO 8601 date of last verification, e.g. 2026-11-10.	1	0
+PARAM	1162c64f-498a-58de-9c2f-c8e10ab136da	RoIM_VerificationSource	TEXT		1	1	Robot or scan ID plus a link to the evidence.	1	0

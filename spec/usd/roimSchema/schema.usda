@@ -1,0 +1,159 @@
+#usda 1.0
+(
+    """RoIM codeless schema: robot-readiness data for OpenUSD prims.
+    Mirrors IFC Pset_RobotReadiness v0.1. Robotics Information Modelling (RoIM), doi:10.5281/zenodo.24099902"""
+    subLayers = [
+        @usd/schema.usda@
+    ]
+)
+
+over "GLOBAL" (
+    customData = {
+        string libraryName = "roim"
+        string libraryPath = "."
+        string libraryPrefix = "Roim"
+        bool skipCodeGeneration = true
+    }
+) {
+}
+
+class "RoIMRobotReadinessAPI" (
+    inherits = </APISchemaBase>
+    customData = {
+        token apiSchemaType = "singleApply"
+        string className = "RobotReadinessAPI"
+    }
+    doc = """Applied API schema marking a prim as carrying RoIM robot-readiness information (Pset_RobotReadiness v0.1)."""
+)
+{
+        uniform token roim:level (
+            customData = {
+                string fromLevel = "R0"
+                string ifcPropertyName = "RoIM_Level"
+            }
+            doc = """R0 | R1 | R2 | R3 | R4. RoIM Level of Information met by this element for its task scope."""
+            allowedTokens = ["R0", "R1", "R2", "R3", "R4"]
+        )
+        uniform token[] roim:taskScope (
+            customData = {
+                string fromLevel = "R1"
+                string ifcPropertyName = "RoIM_TaskScope"
+            }
+            doc = """Robotic tasks this element is ready for, e.g. Navigate, Scan, SetOut, Drill, Finish, Inspect (semicolon-separated)."""
+        )
+        uniform bool roim:traversable (
+            customData = {
+                string fromLevel = "R1"
+                string ifcPropertyName = "Traversable"
+            }
+            doc = """True if a ground robot may cross or occupy the element."""
+        )
+        uniform bool roim:keepOutZone (
+            customData = {
+                string fromLevel = "R1"
+                string ifcPropertyName = "KeepOutZone"
+            }
+            doc = """True if no robot may enter the element or its space."""
+        )
+        uniform string roim:controlPointRef (
+            customData = {
+                string fromLevel = "R1"
+                string ifcPropertyName = "ControlPointRef"
+            }
+            doc = """ID of the survey control point the element is set out from."""
+        )
+        uniform double roim:positionTolerance (
+            customData = {
+                string fromLevel = "R2"
+                string ifcPropertyName = "PositionTolerance"
+            }
+            doc = """Design placement tolerance (+/-), in project length units (mm recommended). Stored in metres (USD stage metersPerUnit applies to geometry, not to this value)."""
+        )
+        uniform token roim:asDesignedState (
+            customData = {
+                string fromLevel = "R2"
+                string ifcPropertyName = "AsDesignedState"
+            }
+            doc = """Design | Approved for construction | Superseded."""
+            allowedTokens = ["Design", "Approved for construction", "Superseded"]
+        )
+        uniform bool roim:registrationTarget (
+            customData = {
+                string fromLevel = "R2"
+                string ifcPropertyName = "RegistrationTarget"
+            }
+            doc = """True if the element is usable as a scan-to-model registration feature."""
+        )
+        uniform string roim:settingOutPoints (
+            customData = {
+                string fromLevel = "R3"
+                string ifcPropertyName = "SettingOutPoints"
+            }
+            doc = """Reference to a setting-out point set (CSV file name or IfcGrid/IfcAnnotation ID)."""
+        )
+        uniform string roim:surfaceType (
+            customData = {
+                string fromLevel = "R3"
+                string ifcPropertyName = "SurfaceType"
+            }
+            doc = """Finished surface the robot touches, e.g. Concrete fair-faced, Gypsum board, Glazing."""
+        )
+        uniform string roim:substrateMaterial (
+            customData = {
+                string fromLevel = "R3"
+                string ifcPropertyName = "SubstrateMaterial"
+            }
+            doc = """Material behind the surface, for drilling and fixing."""
+        )
+        uniform string roim:fixingMethod (
+            customData = {
+                string fromLevel = "R3"
+                string ifcPropertyName = "FixingMethod"
+            }
+            doc = """e.g. Anchor M10, Screw, Adhesive."""
+        )
+        uniform token roim:approachSide (
+            customData = {
+                string fromLevel = "R3"
+                string ifcPropertyName = "ApproachSide"
+            }
+            doc = """Front | Back | Top | Underside | Any."""
+            allowedTokens = ["Front", "Back", "Top", "Underside", "Any"]
+        )
+        uniform string roim:scheduleTaskRef (
+            customData = {
+                string fromLevel = "R3"
+                string ifcPropertyName = "ScheduleTaskRef"
+            }
+            doc = """4D programme task ID the element belongs to."""
+        )
+        uniform token roim:asBuiltState (
+            customData = {
+                string fromLevel = "R4"
+                string ifcPropertyName = "AsBuiltState"
+            }
+            doc = """Not started | In progress | Installed | Verified | Non-conforming."""
+            allowedTokens = ["Not started", "In progress", "Installed", "Verified", "Non-conforming"]
+        )
+        uniform double roim:measuredDeviation (
+            customData = {
+                string fromLevel = "R4"
+                string ifcPropertyName = "MeasuredDeviation"
+            }
+            doc = """Worst measured deviation from design at last verification (mm recommended). Stored in metres (USD stage metersPerUnit applies to geometry, not to this value)."""
+        )
+        uniform string roim:lastVerifiedDate (
+            customData = {
+                string fromLevel = "R4"
+                string ifcPropertyName = "LastVerifiedDate"
+            }
+            doc = """ISO 8601 date of last verification, e.g. 2026-11-10."""
+        )
+        uniform string roim:verificationSource (
+            customData = {
+                string fromLevel = "R4"
+                string ifcPropertyName = "VerificationSource"
+            }
+            doc = """Robot or scan ID plus a link to the evidence."""
+        )
+}

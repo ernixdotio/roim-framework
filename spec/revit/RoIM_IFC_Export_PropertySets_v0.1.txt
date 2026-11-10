@@ -1,0 +1,21 @@
+# Revit IFC exporter: user-defined property set definition for RoIM v0.1
+# Format: PropertySet:<tab><Name><tab>I<tab><IFC entity list>  then  <tab><IFC property name><tab><Type><tab><Revit parameter name>
+PropertySet:	Pset_RobotReadiness	I	IfcElement
+	RoIM_Level	Label	RoIM_RoIM_Level
+	RoIM_TaskScope	Label	RoIM_RoIM_TaskScope
+	Traversable	Boolean	RoIM_Traversable
+	KeepOutZone	Boolean	RoIM_KeepOutZone
+	ControlPointRef	Label	RoIM_ControlPointRef
+	PositionTolerance	Length	RoIM_PositionTolerance
+	AsDesignedState	Label	RoIM_AsDesignedState
+	RegistrationTarget	Boolean	RoIM_RegistrationTarget
+	SettingOutPoints	Label	RoIM_SettingOutPoints
+	SurfaceType	Label	RoIM_SurfaceType
+	SubstrateMaterial	Label	RoIM_SubstrateMaterial
+	FixingMethod	Label	RoIM_FixingMethod
+	ApproachSide	Label	RoIM_ApproachSide
+	ScheduleTaskRef	Label	RoIM_ScheduleTaskRef
+	AsBuiltState	Label	RoIM_AsBuiltState
+	MeasuredDeviation	Length	RoIM_MeasuredDeviation
+	LastVerifiedDate	Text	RoIM_LastVerifiedDate
+	VerificationSource	Label	RoIM_VerificationSource

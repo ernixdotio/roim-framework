@@ -1,0 +1,28 @@
+name: Spec proposal
+description: Propose adding, changing or removing a property, level criterion or definition.
+title: "[Spec] "
+labels: ["spec", "proposal"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options: [Property set, Level criteria (R0-R4), Definitions / scope, IDS rules, Revit mapping, OpenUSD schema, Other]
+    validations: { required: true }
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: What should change? Be specific (property name, type, level, allowed values).
+    validations: { required: true }
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale and evidence
+      description: Which robotic task needs this? Any project experience, robot docs or research?
+    validations: { required: true }
+  - type: input
+    id: role
+    attributes:
+      label: Your role (optional)
+      placeholder: e.g. BIM manager at a main contractor

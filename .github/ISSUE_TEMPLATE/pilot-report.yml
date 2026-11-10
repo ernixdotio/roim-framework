@@ -1,0 +1,33 @@
+name: Pilot report
+description: Report results from using RoIM on a project or with a robot.
+title: "[Pilot] "
+labels: ["pilot"]
+body:
+  - type: dropdown
+    id: level
+    attributes:
+      label: RoIM level tested
+      multiple: true
+      options: [R1 Navigable, R2 Verifiable, R3 Actionable, R4 Closed-loop]
+    validations: { required: true }
+  - type: input
+    id: task
+    attributes:
+      label: Robotic task and platform
+      placeholder: e.g. Layout set-out with a printing robot; Isaac Sim navigation test; quadruped + LiDAR scan
+    validations: { required: true }
+  - type: textarea
+    id: setup
+    attributes:
+      label: Project and model setup
+      description: Building type, authoring tool, how the RoIM properties were added. Anonymise as needed.
+  - type: textarea
+    id: results
+    attributes:
+      label: Results
+      description: What worked, what failed, accuracy achieved, time saved, information that was missing.
+    validations: { required: true }
+  - type: textarea
+    id: changes
+    attributes:
+      label: Suggested changes to RoIM

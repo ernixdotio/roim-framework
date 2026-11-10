@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use RoIM, please cite it as below."
+title: "Robotics Information Modelling (RoIM): A Framework for Robot-Ready Building Information"
+type: report
+version: "1.0"
+date-released: 2026-11-10
+doi: 10.5281/zenodo.24099902
+license: CC-BY-4.0
+url: "https://doi.org/10.5281/zenodo.24099902"
+authors:
+  - family-names: Mandisodza
+    given-names: Ernest
+keywords:
+  - Robotics Information Modelling
+  - RoIM
+  - BIM
+  - construction robotics
+  - IFC
+  - robot-ready BIM
+abstract: >-
+  Robotics Information Modelling (RoIM) is a framework for robot-ready BIM:
+  four pillars, five readiness levels (R0-R4) and a draft IFC property set,
+  Pset_RobotReadiness, aligned with ISO 19650 and IDS.
