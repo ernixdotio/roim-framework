@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 """
+DRAFT - NOT FOR IMPLEMENTATION. Part of the RoIM framework under development; for research
+and discussion only. Not validated; do not use for real projects or safety decisions.
+See DISCLAIMER.md.
+
 roim_check.py - RoIM readiness checker (v0.1)
 
 Reads an IFC model, finds every element that declares a RoIM level in
@@ -94,6 +98,7 @@ def check(model_path, report_path=None):
 
 
 def main():
+    print("[RoIM v0.1 DRAFT] Research tool - not for implementation. See DISCLAIMER.md")
     ap = argparse.ArgumentParser(description="Check an IFC model against RoIM levels (Pset_RobotReadiness v0.1).")
     ap.add_argument("model", help="Path to the IFC file")
     ap.add_argument("--report", help="Write a CSV report to this path")

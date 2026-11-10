@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 """
+DRAFT - NOT FOR IMPLEMENTATION. Part of the RoIM framework under development; for research
+and discussion only. Not validated; do not use for real projects or safety decisions.
+See DISCLAIMER.md.
+
 ifc_to_usd_roim.py - convert an IFC model to OpenUSD with RoIM data (v0.1)
 
 Produces a USD stage ready for NVIDIA Omniverse / Isaac Sim:
@@ -151,6 +155,7 @@ def convert(ifc_path, usd_path, roim_only=False):
 
 
 def main():
+    print("[RoIM v0.1 DRAFT] Research tool - not for implementation. See DISCLAIMER.md")
     ap = argparse.ArgumentParser(description="Convert IFC to OpenUSD with RoIM robot-readiness data.")
     ap.add_argument("ifc")
     ap.add_argument("usd", help="Output .usd/.usda/.usdc")

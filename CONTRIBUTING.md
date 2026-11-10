@@ -1,5 +1,7 @@
 # Contributing to RoIM
 
+> **Draft, not for implementation.** Part of the RoIM framework under development. See [DISCLAIMER.md](DISCLAIMER.md).
+
 Thanks for helping build Robotics Information Modelling. RoIM is at **v0.1, draft for public comment**, so the most valuable contributions right now are evidence and critique.
 
 ## Ways to contribute

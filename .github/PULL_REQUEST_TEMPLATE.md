@@ -1,3 +1,5 @@
+> RoIM is a framework under development. Contributions are research proposals, not implementation guidance.
+
 ## What does this change?
 
 ## Related issue

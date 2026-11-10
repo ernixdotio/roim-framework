@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Generate examples/roim_sample.ifc: a tiny IFC4 model with elements at R1-R3 (one deliberately incomplete)."""
+"""
+DRAFT - NOT FOR IMPLEMENTATION. Part of the RoIM framework under development; for research
+and discussion only. Not validated; do not use for real projects or safety decisions.
+See DISCLAIMER.md.
+Generate examples/roim_sample.ifc: a tiny IFC4 model with elements at R1-R3 (one deliberately incomplete)."""
 import ifcopenshell, ifcopenshell.api as api, ifcopenshell.api.project
 m = ifcopenshell.api.project.create_file(version="IFC4") if hasattr(ifcopenshell.api, "project") else ifcopenshell.file(schema="IFC4")
 proj = api.run("root.create_entity", m, ifc_class="IfcProject", name="RoIM sample")

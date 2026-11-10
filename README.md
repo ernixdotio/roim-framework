@@ -3,9 +3,12 @@
 **A framework for robot-ready building information.**
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24099902.svg)](https://doi.org/10.5281/zenodo.24099902)
-![Status](https://img.shields.io/badge/status-v0.1%20draft%20for%20comment-orange)
+![Status](https://img.shields.io/badge/status-in%20development%20%E2%80%94%20not%20for%20implementation-red)
 ![Spec licence](https://img.shields.io/badge/spec-CC%20BY%204.0-blue)
 ![Code licence](https://img.shields.io/badge/code-MIT-green)
+
+> [!WARNING]
+> **Framework in development: not ready for implementation.** RoIM v0.1 is a draft proposal for discussion and research. It has not been validated on live projects or with robots, and must not be used to specify, check, accept or operate real work or to make safety decisions. Everything here will change. See [DISCLAIMER.md](DISCLAIMER.md).
 
 Construction robots are arriving on site faster than the information they need. Building models are written for human readers, so they lack the survey-grade geometry, machine-readable semantics and live site state that layout robots, scanning quadrupeds, drones and finishing robots need to act safely.
 
@@ -85,7 +88,7 @@ python tools/ifc_to_usd_roim.py your_model.ifc your_model.usda
 
 ## 🤝 Help build RoIM
 
-RoIM v0.1 is a proposal. It needs testing on real projects with real robots. Contributions are welcome from:
+RoIM v0.1 is a proposal, not a usable standard. It needs testing on real projects with real robots. Contributions are welcome from:
 
 - **BIM managers and coordinators**: test the levels on live models and refine the property set
 - **Contractors and site teams**: pilot a robotic task on an R2 or R3 model and report back
@@ -103,6 +106,10 @@ See the [ROADMAP](ROADMAP.md) for what's planned.
 > Mandisodza, E. (2026). *Robotics Information Modelling (RoIM): A Framework for Robot-Ready Building Information* (Version 1.0). Zenodo. https://doi.org/10.5281/zenodo.24099902
 
 GitHub's **"Cite this repository"** button uses [`CITATION.cff`](CITATION.cff).
+
+## Disclaimer
+
+RoIM is a framework under development and **nothing in this repository is ready for implementation**. See [DISCLAIMER.md](DISCLAIMER.md).
 
 ## Licence
 

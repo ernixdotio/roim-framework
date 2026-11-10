@@ -18,6 +18,7 @@ keywords:
   - IFC
   - robot-ready BIM
 abstract: >-
+  Framework under development; not ready for implementation.
   Robotics Information Modelling (RoIM) is a framework for robot-ready BIM:
   four pillars, five readiness levels (R0-R4) and a draft IFC property set,
   Pset_RobotReadiness, aligned with ISO 19650 and IDS.

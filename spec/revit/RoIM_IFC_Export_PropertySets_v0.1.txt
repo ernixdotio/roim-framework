@@ -1,3 +1,4 @@
+# DRAFT - NOT FOR IMPLEMENTATION. RoIM framework under development. See DISCLAIMER.md
 # Revit IFC exporter: user-defined property set definition for RoIM v0.1
 # Format: PropertySet:<tab><Name><tab>I<tab><IFC entity list>  then  <tab><IFC property name><tab><Type><tab><Revit parameter name>
 PropertySet:	Pset_RobotReadiness	I	IfcElement

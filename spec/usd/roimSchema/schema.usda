@@ -1,6 +1,7 @@
 #usda 1.0
 (
-    """RoIM codeless schema: robot-readiness data for OpenUSD prims.
+    """DRAFT - NOT FOR IMPLEMENTATION (RoIM framework under development).
+    RoIM codeless schema: robot-readiness data for OpenUSD prims.
     Mirrors IFC Pset_RobotReadiness v0.1. Robotics Information Modelling (RoIM), doi:10.5281/zenodo.24099902"""
     subLayers = [
         @usd/schema.usda@

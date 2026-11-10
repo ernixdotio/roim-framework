@@ -1,5 +1,7 @@
 # RoIM OpenUSD schema
 
+> **Draft, not for implementation.** Part of the RoIM framework under development. See [DISCLAIMER.md](../../DISCLAIMER.md).
+
 `roimSchema/` is a **codeless** OpenUSD plugin defining the single-apply API schema `RoIMRobotReadinessAPI`. It mirrors IFC `Pset_RobotReadiness` v0.1 as `roim:*` attributes.
 
 - `schema.usda`: source definition

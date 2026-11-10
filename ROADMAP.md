@@ -1,5 +1,7 @@
 # RoIM Roadmap
 
+> **Draft, not for implementation.** Part of the RoIM framework under development. See [DISCLAIMER.md](DISCLAIMER.md).
+
 ## v0.1 (Nov 2026): published ✅
 - White paper v1.0 with DOI
 - `Pset_RobotReadiness` v0.1 (JSON, CSV)

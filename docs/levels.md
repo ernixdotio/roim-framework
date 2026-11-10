@@ -1,5 +1,7 @@
 # RoIM Levels of Information (R0–R4)
 
+> **Draft, not for implementation.** Part of the RoIM framework under development. See [DISCLAIMER.md](../DISCLAIMER.md).
+
 A RoIM level states what a machine can safely do with a model. Levels are set **per element and per task**, as Level of Information Need is, not for the whole model. One project can need R3 for slab set-out and R1 for façade inspection.
 
 Levels are cumulative: R3 includes everything from R1 and R2.

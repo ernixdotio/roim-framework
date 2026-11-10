@@ -1,5 +1,7 @@
 # RoIM with OpenUSD and NVIDIA Omniverse / Isaac Sim
 
+> **Draft, not for implementation.** Part of the RoIM framework under development. See [DISCLAIMER.md](../DISCLAIMER.md).
+
 IFC is how buildings are **delivered**; OpenUSD is how robots are **simulated**. RoIM defines the same robot-readiness data in both, so information checked in a BIM model arrives intact in a simulator, and results can travel back.
 
 | | IFC side | OpenUSD side |

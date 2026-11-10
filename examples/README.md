@@ -1,5 +1,7 @@
 # Examples
 
+> **Draft, not for implementation.** Part of the RoIM framework under development. See [DISCLAIMER.md](../DISCLAIMER.md).
+
 `roim_sample.ifc` is a tiny IFC4 model with four elements:
 
 | Element | Declared level | Result |

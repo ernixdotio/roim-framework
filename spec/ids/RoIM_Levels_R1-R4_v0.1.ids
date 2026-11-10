@@ -4,7 +4,7 @@
     <ids:title>RoIM Levels of Information R1-R4 (Pset_RobotReadiness v0.1)</ids:title>
     <ids:copyright>Ernest Mandisodza, CC BY 4.0</ids:copyright>
     <ids:version>0.1</ids:version>
-    <ids:description>Checks that elements declaring a RoIM level carry the properties that level requires. Robotics Information Modelling (RoIM), doi:10.5281/zenodo.24099902</ids:description>
+    <ids:description>DRAFT - NOT FOR IMPLEMENTATION (framework under development). Checks that elements declaring a RoIM level carry the properties that level requires. Robotics Information Modelling (RoIM), doi:10.5281/zenodo.24099902</ids:description>
     <ids:date>2026-11-10</ids:date>
     <ids:purpose>Robot-ready model delivery check</ids:purpose>
   </ids:info>
