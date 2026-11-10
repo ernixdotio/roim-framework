@@ -103,7 +103,7 @@ See the [ROADMAP](ROADMAP.md) for what's planned.
 
 ## Citing RoIM
 
-> Mandisodza, E. (2026). *Robotics Information Modelling (RoIM): A Framework for Robot-Ready Building Information* (Version 1.0). Zenodo. https://doi.org/10.5281/zenodo.24099902
+> Mandisodza, E. (2026). *Robotics Information Modelling (RoIM): A Framework for Robot-Ready Building Information* (Version 1.1). Zenodo. https://doi.org/10.5281/zenodo.24099902
 
 GitHub's **"Cite this repository"** button uses [`CITATION.cff`](CITATION.cff).
 

@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use RoIM, please cite it as below."
 title: "Robotics Information Modelling (RoIM): A Framework for Robot-Ready Building Information"
 type: report
-version: "1.0"
+version: "1.1"
 date-released: 2026-11-10
 doi: 10.5281/zenodo.24099902
 license: CC-BY-4.0
